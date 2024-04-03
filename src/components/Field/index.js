@@ -35,7 +35,7 @@ const Field = ({ type = FIELD_TYPES.INPUT_TEXT, label, name, placeholder }) => {
   }
   return (
     <div className="inputField">
-      <span>{label}</span>
+      <label className="label" htmlFor={label} >{label}</label>
       {component}
     </div>
   );
