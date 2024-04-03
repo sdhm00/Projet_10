@@ -22,6 +22,7 @@ const Button = ({ title, onClick, type, disabled, children }) => {
           {children}
         </button>
       );
+      /* verif du form pour l'envoie */
     case BUTTON_TYPES.SUBMIT:
       return (
         <input
@@ -34,6 +35,7 @@ const Button = ({ title, onClick, type, disabled, children }) => {
           title={title}
         />
       );
+      /* fin de verif du form pour l'envoie */
     default:
       return (
         <button
