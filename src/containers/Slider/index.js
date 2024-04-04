@@ -17,7 +17,6 @@ const Slider = () => {
       }
     }, 5000);
   };
-  
   useEffect(() => {
     nextCard();
   });
