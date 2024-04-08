@@ -47,6 +47,7 @@ return (
                   type="radio"
                   name="radio-button"
                   checked={index === radioIdx}
+                  onChange={()=> (radioIdx)}
                 />
               ))}
             </div>
