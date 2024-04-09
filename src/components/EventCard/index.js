@@ -1,7 +1,12 @@
 import PropTypes from "prop-types";
 import { getMonth } from "../../helpers/Date";
+import { api } from "../../contexts/DataContext";
 
 import "./style.scss";
+
+const event = api;
+
+console.log("event api", event)
 
 const EventCard = ({
   imageSrc,
@@ -36,6 +41,7 @@ EventCard.propTypes = {
   small: PropTypes.bool,
   label: PropTypes.string.isRequired,
 };
+console.log("img source", EventCard.imageSrc)
 
 EventCard.defaultProps = {
   imageAlt: "image",

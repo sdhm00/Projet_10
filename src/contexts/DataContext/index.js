@@ -13,9 +13,10 @@ export const api = {
   loadData: async () => {
     const json = await fetch("/events.json");
     return json.json();
-    
   },
 };
+
+console.log("api", api.loadData)
 export const DataProvider = ({ children }) => {
   const [error, setError] = useState(null);
   const [data, setData] = useState(null);
