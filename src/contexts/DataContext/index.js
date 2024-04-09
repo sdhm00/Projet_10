@@ -16,7 +16,6 @@ export const api = {
   },
 };
 
-console.log("api", api.loadData)
 export const DataProvider = ({ children }) => {
   const [error, setError] = useState(null);
   const [data, setData] = useState(null);
