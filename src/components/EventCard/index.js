@@ -27,8 +27,6 @@ const EventCard = ({
       </div>
     </div>
 );
-console.log("title", EventCard.title)
-console.log("src", EventCard.imageSrc)
 
 EventCard.propTypes = {
   imageSrc: PropTypes.string.isRequired,
