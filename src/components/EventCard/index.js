@@ -26,7 +26,7 @@ const EventCard = ({
         <div className="EventCard__month">{getMonth(date)}</div>
       </div>
     </div>
-  );
+);
 
 EventCard.propTypes = {
   imageSrc: PropTypes.string.isRequired,
@@ -36,7 +36,6 @@ EventCard.propTypes = {
   small: PropTypes.bool,
   label: PropTypes.string.isRequired,
 };
-console.log("img source", EventCard.imageSrc)
 
 EventCard.defaultProps = {
   imageAlt: "image",
